@@ -142,10 +142,12 @@ a {
 .productlist img {
   align-self: center;
 }
-.productlist article.soldOut ::before {
+.productlist article.soldOut::before {
   content: "Sold Out";
   position: absolute;
   padding: 1rem;
+  background-color: #000000;
+  color: #ffffff;
 }
 .productlist article.soldOut img {
   opacity: 0.5;
@@ -157,9 +159,7 @@ a {
 .discounted p:last-child {
   background-color: red;
   padding: 0.2rem;
-}
-.discounted > p {
-  margin-bottom: 0;
+  display: inline-block;
 }
 
 /********Product*******/
