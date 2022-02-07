@@ -18,21 +18,24 @@
     </header>
     <main>
       <h2>Brand name</h2>
-      <article class="smallProduct onSale">
-        <img
-          src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-          alt="Sahara Team India Fanwear Round Neck Jersey"
-        />
-        <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
-        <p class="subtle">T-shirts / Nike</p>
-        <p class="price"><span>Was</span> DKK 750,-</p>
-        <div class="discounted">
-          <p>Now DKK 650</p>
-          <p>-15%</p>
-        </div>
-        <a href="product.html">Read More</a>
-      </article>
-      <article class="smallProduct onSale">
+      <template id="smallProductTemplate">
+        <article class="smallProduct">
+          <img
+            src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
+            alt="Sahara Team India Fanwear Round Neck Jersey"
+          />
+          <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+          <p class="subtle">T-shirts / Nike</p>
+          <p class="price"><span>Was</span> DKK 750,-</p>
+          <div class="discounted">
+            <p>Now DKK 650</p>
+            <p>-15%</p>
+          </div>
+          <a href="product.html">Read More</a>
+        </article>
+      </template>
+
+      <!--    <article class="smallProduct onSale">
         <img
           src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp"
           alt="Blue T20"
@@ -41,13 +44,12 @@
         <p class="subtle">Tshirts / Nike</p>
         <p class="price"><span>Prev.</span> DKK 1595,-</p>
         <div class="discounted">
-          <!-- Needs to be removed when not on discount -->
           <p>Now DKK 1560,-</p>
           <p>-34%</p>
         </div>
         <a href="product.html">Read More</a>
       </article>
-      <article class="smallProduct soldOut">
+      <article class="smallProduct onSale soldOut">
         <img
           src="	https://kea-alt-del.dk/t7/images/webp/640/1529.webp"
           alt="Blue T20 Indian Cricket Jersey"
@@ -75,34 +77,6 @@
         </div>
         <a href="product.html">Read More</a>
       </article>
-      <article class="smallProduct onSale">
-        <img
-          src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-          alt="Sahara Team India Fanwear Round Neck Jersey"
-        />
-        <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
-        <p class="subtle">T-shirts / Nike</p>
-        <p class="price"><span>Was</span> DKK 750,-</p>
-        <div class="discounted">
-          <p>Now DKK 650</p>
-          <p>-15%</p>
-        </div>
-        <a href="product.html">Read More</a>
-      </article>
-      <article class="smallProduct onSale">
-        <img
-          src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-          alt="Sahara Team India Fanwear Round Neck Jersey"
-        />
-        <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
-        <p class="subtle">T-shirts / Nike</p>
-        <p class="price"><span>Was</span> DKK 750,-</p>
-        <div class="discounted">
-          <p>Now DKK 650</p>
-          <p>-15%</p>
-        </div>
-        <a href="product.html">Read More</a>
-      </article>
       <article class="smallProduct">
         <img
           src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
@@ -113,35 +87,8 @@
         <p class="price"><span>Was</span> DKK 750,-</p>
         <p>Now DKK 650</p>
         <a href="product.html">Read More</a>
-      </article>
-      <article class="smallProduct">
-        <img
-          src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-          alt="Sahara Team India Fanwear Round Neck Jersey"
-        />
-        <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
-        <p class="subtle">T-shirts / Nike</p>
-        <p class="price"><span>Was</span> DKK 750,-</p>
-        <div class="discounted">
-          <p>Now DKK 650</p>
-          <p>-15%</p>
-        </div>
-        <a href="product.html">Read More</a>
-      </article>
-      <article class="smallProduct">
-        <img
-          src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-          alt="Sahara Team India Fanwear Round Neck Jersey"
-        />
-        <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
-        <p class="subtle">T-shirts / Nike</p>
-        <p class="price"><span>Was</span> DKK 750,-</p>
-        <div class="discounted">
-          <p>Now DKK 650</p>
-          <p>-15%</p>
-        </div>
-        <a href="product.html">Read More</a>
-      </article>
+      </article> -->
     </main>
+    <script src="productlist.js"></script>
   </body>
 </html>

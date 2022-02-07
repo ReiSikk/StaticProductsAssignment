@@ -149,6 +149,10 @@ a {
   background-color: #000000;
   color: #ffffff;
 }
+.productlist article .discounted,
+.productlist article .price span {
+  display: none;
+}
 .productlist article.soldOut img {
   opacity: 0.5;
 }
@@ -156,6 +160,10 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.productlist article .onSale .price span {
+  display: initial;
+}
+
 .discounted p:last-child {
   background-color: red;
   padding: 0.2rem;
