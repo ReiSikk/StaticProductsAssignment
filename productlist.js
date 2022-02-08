@@ -1,4 +1,5 @@
 const url = "https://kea-alt-del.dk/t7/api/products/";
+const urlParams = new URLSearchParams(window.location.search);
 
 fetch(url)
   .then(function (res) {
@@ -46,13 +47,19 @@ function showProduct(product) {
   if (product.discount) {
     copy.querySelector("article").classList.add("onSale");
   }
+  copy.querySelector(
+    ".smallProduct img"
+  ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
   /*  
    <div class="discounted">
   <p>Now DKK 650</p>
   <p>-15%</p>
 </div> 
 */
-  copy.querySelector(".discounted p").textContent = product.price;
+  copy.querySelector(".discounted p").textContent =
+    "DKK " +
+    Math.round(`${product.price - (product.price / 100) * product.discount}`) +
+    " ,-";
   //&grab parent
   const parent = document.querySelector("main");
   //append it

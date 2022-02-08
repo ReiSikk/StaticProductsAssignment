@@ -169,7 +169,10 @@ a {
   padding: 0.2rem;
   display: inline-block;
 }
-
+.readmore {
+  background-color: darkgray;
+  max-width: 23%;
+}
 /********Product*******/
 .breadcrumbs {
   list-style-type: none;
