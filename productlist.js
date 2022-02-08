@@ -1,5 +1,4 @@
 const url = "https://kea-alt-del.dk/t7/api/products/";
-const urlParams = new URLSearchParams(window.location.search);
 
 fetch(url)
   .then(function (res) {
@@ -35,7 +34,9 @@ function showProduct(product) {
   const copy = template.cloneNode(true);
 
   //change the content
-
+  copy
+    .querySelector(".readmore")
+    .setAttribute("href", `product.html?id=${product.id}`);
   copy.querySelector(
     ".subtle"
   ).textContent = `${product.articletype} / ${product.brandname}`;
