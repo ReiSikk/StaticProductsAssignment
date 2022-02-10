@@ -137,6 +137,7 @@ a {
 }
 .productlist img {
   align-self: center;
+  padding-bottom: 1rem;
 }
 .productlist article.soldOut::before {
   content: "Sold Out";
@@ -162,12 +163,37 @@ a {
 
 .discounted p:last-child {
   background-color: red;
+  border-radius: 0.5rem;
   padding: 0.2rem;
   display: inline-block;
 }
-.readmore {
-  background-color: darkgray;
-  max-width: 23%;
+#buttondiv {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+#buttondiv a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.8;
+}
+a.readmore {
+  appearance: button;
+  display: inline;
+  height: 3rem;
+  width: 100%;
+  border: transparent;
+  border-radius: 2rem;
+  font-family: poppins;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  color: #2c2c2c;
+  background-color: #d8d8d8;
+  cursor: pointer;
+}
+#buttondiv a:hover {
+  opacity: 1;
 }
 /********Product*******/
 #productBox {
@@ -248,6 +274,9 @@ form label {
   background-color: hsl(200, 3%, 20%);
   cursor: pointer;
 }
+.purchaseBox button:hover {
+  box-shadow: gray 1px 4px 6px;
+}
 #info {
   background-color: hsl(200, 3%, 20%);
   padding: 1rem;
@@ -268,6 +297,9 @@ form label {
   nav {
     justify-content: flex-start;
     padding-bottom: 1.33rem;
+  }
+  #buttondiv a {
+    opacity: 1;
   }
 }
 @media screen and (min-width: 899px) {
