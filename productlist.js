@@ -1,5 +1,10 @@
-const url = "https://kea-alt-del.dk/t7/api/products/";
+const urlParams = new URLSearchParams(window.location.search);
+const brandname = urlParams.get("brandname");
+const url = "https://kea-alt-del.dk/t7/api/products?brandname=" + brandname;
 
+// grab var from url
+
+//update url
 fetch(url)
   .then(function (res) {
     return res.json();
@@ -26,6 +31,7 @@ function handleProductList(data) {
           <a href="product.html">Read More</a>
         </article>
 */
+
 function showProduct(product) {
   console.log(product);
   //grab the template
@@ -34,6 +40,7 @@ function showProduct(product) {
   const copy = template.cloneNode(true);
 
   //change the content
+
   copy
     .querySelector(".readmore")
     .setAttribute("href", `product.html?id=${product.id}`);
@@ -41,7 +48,8 @@ function showProduct(product) {
     ".subtle"
   ).textContent = `${product.articletype} / ${product.brandname}`;
   copy.querySelector("h3").textContent = product.productdisplayname;
-
+  copy.querySelector(".discount").textContent = "- " + product.discount + " %";
+  copy.querySelector(".price").textContent = "DKK " + product.price + " ,-";
   if (product.soldout) {
     copy.querySelector("article").classList.add("soldOut");
   }
@@ -51,6 +59,7 @@ function showProduct(product) {
   copy.querySelector(
     ".smallProduct img"
   ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+
   /*  
    <div class="discounted">
   <p>Now DKK 650</p>
