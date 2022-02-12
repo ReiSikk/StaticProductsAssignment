@@ -9,6 +9,16 @@ fetch(url)
   });
 
 function handleCategoryList(data) {
+  data.sort(function (a, b) {
+    console.log(data);
+    if (a.brandname < b.brandname) {
+      return -1;
+    }
+    if (a.brandname < b.brandname) {
+      return 1;
+    }
+    return 0;
+  });
   data.forEach(showCategory);
 }
 /* 

@@ -31,4 +31,8 @@ function showProduct(product) {
   document.querySelector(".inventorynumber").textContent = product.id;
   document.querySelector("#info .brandname").textContent = product.brandname;
   document.querySelector("#info .brandbio").textContent = product.brandbio;
+  document.querySelector(".purchaseBox .price ").textContent =
+    product.price + " DKK";
 }
+
+//add soldOut and discount classes

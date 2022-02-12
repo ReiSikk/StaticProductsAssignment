@@ -9,11 +9,10 @@
   </head>
   <body class="category">
     <header class="mainNav">
-      <h1>Title of the page</h1>
+      <h1>Brands</h1>
       <nav>
         <a href="#">Categories</a>
         <a href="category.html">Brands</a>
-        <a href="#">Seasons</a>
       </nav>
     </header>
     <main>
@@ -32,14 +31,16 @@
         </ol>
       </section>
       <div class="brandList">
-        <section class="letterGroup" id="letter_a">
-          <h2>A</h2>
-          <ol>
-            <li><a href="productlist.html">brandname</a></li>
-            <li><a href="productlist.html">brandname</a></li>
-          </ol>
-        </section>
-        <section class="letterGroup" id="letter_b">
+        <template id="brandNameTemplate">
+          <section class="letterGroup" id="letter_a">
+            <ol>
+              <li>
+                <a class="brandname" href="productlist.html">brandname</a>
+              </li>
+            </ol>
+          </section>
+        </template>
+        <!--  <section class="letterGroup" id="letter_b">
           <h2>B</h2>
           <ol>
             <li><a href="productlist.html">brandname</a></li>
@@ -101,8 +102,9 @@
             <li><a href="productlist.html">brandname</a></li>
             <li><a href="productlist.html">brandname</a></li>
           </ol>
-        </section>
+        </section> -->
       </div>
     </main>
+    <script src="category.js"></script>
   </body>
 </html>

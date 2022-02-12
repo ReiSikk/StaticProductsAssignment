@@ -97,8 +97,8 @@ a {
   padding: 1rem;
 }
 .brandList li:hover {
-  background: #ffd2d2;
-  transition: transform 0.3s;
+  background: #c4c4c4;
+  transition: linear 0.4s;
 }
 .brandList a {
   text-decoration: none;
